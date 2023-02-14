@@ -5,13 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('reactRoot') as HTMLElement
 );
+
+const secondRoot = ReactDOM.createRoot(
+  document.getElementById('secondReact') as HTMLElement
+)
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App title="App One"/>
   </React.StrictMode>
 );
+
+secondRoot.render(
+  <React.StrictMode>
+    <App title="App Two"/>
+  </React.StrictMode>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
