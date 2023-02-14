@@ -4,12 +4,15 @@ html {
   }
 
 body {
-background: linear-gradient(to left,lightblue,lightgreen);
-background-repeat: no-repeat;
-background-size: cover;
-font-family: "Arial";
+    background: lightblue;
 }
 
 #wrapper {
     margin: 1rem;
+    flex-basis: 50%;
+}
+
+#main {
+    display: flex;
+    width: 100%;
 }

@@ -17,7 +17,7 @@ fs.readFile('./public/index.css', function (err, data) {
   }
   css = data;
 });
-fs.readFile('./index.js', function (err, data) {
+fs.readFile('./public/index.js', function (err, data) {
   if (err) {
     throw err;
   }
