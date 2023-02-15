@@ -5,19 +5,19 @@ let html;
 let css;
 let js;
 // use fs.readFile to assign the global variables above:
-fs.readFile('./public/index.html', function (err, data) {
+fs.readFile('./wrapper/index.html', function (err, data) {
   if (err) {
     throw err;
   }
   html = data;
 });
-fs.readFile('./public/index.css', function (err, data) {
+fs.readFile('./wrapper/index.css', function (err, data) {
   if (err) {
     throw err;
   }
   css = data;
 });
-fs.readFile('./public/index.js', function (err, data) {
+fs.readFile('./wrapper/index.js', function (err, data) {
   if (err) {
     throw err;
   }
